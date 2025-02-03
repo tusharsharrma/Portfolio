@@ -1,74 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    
+    <main id="main">
+      <div class="nav__space">Error 404: Mediocrity not found</div>
+    
+      <section class="my__info">
+        <img src="assets/my profile-ascii1.png" alt="profile picture" height="200">
+        
+        <div id="name">Tushar</div>
+        <a  href="mailto:ttusharr.0@gmail.com">ttushar.0@gmail.com</a>
+        <div id="contact-info__container">
+          <button class="btn">Download CV</button>
+          <img
+            src="assets\github.png" 
+            alt="My Github Profile"
+            class="icon__btn"
+            height="32"
+            onclick="location.href='https://github.com/tusharsharrma'"
+          >
+          <img
+            src="assets/linkedin.png" 
+            alt="My Github Profile"
+            class="icon__btn"
+            height="32"
+            onclick="location.href='https://github.com/tusharsharrma'"
+          >
 
-    <!-- desktop nav -->
-    <nav id="desktop-nav">
-        <div class="logo">Tushar Sharma</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
         </div>
-    </nav>
+        <div class="education">
+          <h2>Education</h2>
+          <p>B.Tech Computer Science Engineering</p>
+          <p>Year - (2020-2024)</p>
+          <p>CGPA: 7.95</p>
+        </div>
 
-    <!-- hamburger nav -->
-    <nav id="hamburger-nav">
-        <div class="logo">Tushar Sharma</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
+      </section>
 
-    <!-- profile section -->
-     <section id="profile" >
-        <div class="section_pic-container">
-            <img src="assets\profile-pic.png" alt="Tushar sharma profile-pic" width="400px" height="400px">
+      <section class="skills__section">
+        <div id="skills__sect__heading">   
+          Frontend Developer       
         </div>
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Tushar Sharma</h1>
-            <p class="section_text_p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color">Contact Info</button>
-            </div>
-            <div id="social-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="My Linkedin profile"
-                class="icon"
-                onclick="location.href='https://linkedin.com/'"
-                />
-                <img 
-                src="./assets/github.png" 
-                alt="My Github profile"
-                class="icon"
-                onclick="location.href='https://github.com/'"
-                />
-            </div>
+        <div id="skills__container">
         </div>
-     </section>
+      </section>
+      
+      <section class="project__section">
+        <div id="proj__sect__heading"></div>
+        <div id="projects__container">
+        </div>
+      </section>
 
-    <script src="script.js"></script>
-</body>
+  
+      <!-- <div class="pane right3">bisqsi</div> -->
+    
+    </main>
+    <!-- <div id="app"></div> -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
